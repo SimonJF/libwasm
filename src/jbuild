@@ -1,0 +1,11 @@
+(jbuild_version 1)
+
+(ocamllex (lexer))
+(ocamlyacc (parser))
+
+(library
+  ((name libwasm)
+   (public_name libwasm)
+   (flags (:standard -safe-string -dtypes -w Ae-8-27-42-44-45-60))
+  )
+)
