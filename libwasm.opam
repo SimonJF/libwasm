@@ -6,6 +6,7 @@ homepage: "https://github.com/SimonJF/libwasm"
 bug-reports: "https://github.com/SimonJF/libwasm"
 dev-repo: "https://github.com/SimonJF/libwasm.git"
 license: "Apache-2.0"
+
 build: [
   ["jbuilder" "subst" "-n" name] {pinned}
   ["jbuilder" "build" "-p" name "-j" jobs]
