@@ -11,3 +11,14 @@ val binop : Ast.binop -> string
 val testop : Ast.testop -> string
 val relop : Ast.relop -> string
 val cvtop : Ast.cvtop -> string
+
+(* Stuff needed to print modules *)
+val is_func_import : Ast.import -> bool
+val is_table_import : Ast.import -> bool
+val is_memory_import : Ast.import -> bool
+val is_global_import : Ast.import -> bool
+
+(* Imports *)
+val import : int -> Ast.import -> sexpr
+
+val start : Ast.var -> sexpr
